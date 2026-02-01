@@ -1,0 +1,58 @@
+# Prerequisites
+*.gch
+*.pch
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Visual Studio
+.vs/
+*. vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+
+# VS Code
+.vscode/
+
+# Unreal Engine build and cache folders
+Binaries/
+Build/
+Intermediate/
+Saved/
+DerivedDataCache/
+
+# Unreal Engine plugin build folders
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+Plugins/*/Build/
+
+# Unreal Engine crash reports
+CrashReportClient/
