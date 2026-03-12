@@ -10,11 +10,7 @@ AMovingPlatform::AMovingPlatform() {
 }
 
 // Called when the game starts or when spawned
-void AMovingPlatform::BeginPlay() {
-  Super::BeginPlay();
-  UE_LOG(LogTemp, Warning,
-         TEXT("The Moving Platform cpp class has been successfully compiled"));
-}
+void AMovingPlatform::BeginPlay() { Super::BeginPlay(); }
 
 // Called every frame
 void AMovingPlatform::Tick(float DeltaTime) { Super::Tick(DeltaTime); }
