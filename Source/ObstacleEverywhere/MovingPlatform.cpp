@@ -12,7 +12,8 @@ AMovingPlatform::AMovingPlatform() {
 // Called when the game starts or when spawned
 void AMovingPlatform::BeginPlay() {
   Super::BeginPlay();
-  UE_LOG(LogTemp, Warning, TEXT("Hullo, my name is Inigo Montoya"));
+  UE_LOG(LogTemp, Warning,
+         TEXT("The Moving Platform cpp class has been successfully compiled"));
 }
 
 // Called every frame
