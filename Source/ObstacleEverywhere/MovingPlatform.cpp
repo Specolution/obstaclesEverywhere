@@ -10,12 +10,15 @@ AMovingPlatform::AMovingPlatform() {
 }
 
 // Called when the game starts or when spawned
-void AMovingPlatform::BeginPlay() {
-
-  Super::BeginPlay();
-
-  SetActorLocation(MyVector);
-}
+void AMovingPlatform::BeginPlay() { Super::BeginPlay(); }
 
 // Called every frame
-void AMovingPlatform::Tick(float DeltaTime) { Super::Tick(DeltaTime); }
+void AMovingPlatform::Tick(float DeltaTime) {
+  Super::Tick(DeltaTime);
+
+  FVector CurrentLocation = GetActorLocation();
+
+  CurrentLocation.X = CurrentLocation.X + 1;
+
+  SetActorLocation(CurrentLocation);
+}
