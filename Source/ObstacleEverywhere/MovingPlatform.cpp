@@ -10,7 +10,11 @@ AMovingPlatform::AMovingPlatform() {
 }
 
 // Called when the game starts or when spawned
-void AMovingPlatform::BeginPlay() { Super::BeginPlay(); }
+void AMovingPlatform::BeginPlay() {
+  Super::BeginPlay();
+
+  LogStart("Hallowed be thy name !");
+}
 
 // Called every frame
 void AMovingPlatform::Tick(float DeltaTime) {
@@ -21,4 +25,8 @@ void AMovingPlatform::Tick(float DeltaTime) {
   CurrentLocation = CurrentLocation + (PlatformVelocity * DeltaTime);
 
   SetActorLocation(CurrentLocation);
+}
+
+void AMovingPlatform::LogStart(FString Message) {
+  UE_LOG(LogTemp, Error, TEXT("%s"), *Message);
 }

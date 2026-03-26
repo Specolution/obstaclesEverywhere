@@ -22,6 +22,8 @@ public:
   // Called every frame
   virtual void Tick(float DeltaTime) override;
 
+  void LogStart(FString Message);
+
   UPROPERTY(EditAnywhere)
   FVector PlatformVelocity = FVector::ZeroVector;
 };
